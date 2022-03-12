@@ -4,6 +4,7 @@ import "golang.org/x/exp/constraints"
 
 type MaxHeap[T constraints.Ordered] struct {
 	elements []T
+	length   int
 }
 
 // Insert inserts a value within the MaxHeap structure,
