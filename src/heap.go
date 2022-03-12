@@ -1,6 +1,8 @@
 package src
 
-type MaxHeap[T Ordered] struct {
+import "golang.org/x/exp/constraints"
+
+type MaxHeap[T constraints.Ordered] struct {
 	elements []T
 }
 
